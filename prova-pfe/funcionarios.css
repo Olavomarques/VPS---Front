@@ -2,82 +2,115 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
 }
 
 body {
-    background: linear-gradient(to bottom, #2d3436, #111111);
+    background: linear-gradient(to top, #111111, #2d3436); 
     color: white;
 }
 
 main {
-    padding: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
+    position: relative;
 }
 
 .btn {
-    background: #e74c3c;
+    background: #e74c3c; 
     color: white;
-    padding: 14px 24px;
+    padding: 12px 20px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     border-radius: 10px;
-    transition: 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
     border: none;
     cursor: pointer;
 }
 
 .btn:hover {
+    background: #c0392b; 
+    transform: translateY(-3px);
+}
+
+.new-client-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #2d3436;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.new-client-btn:hover {
     background: #c0392b;
+    transform: translateY(-3px);
 }
 
 table {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 25px;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 thead {
-    background-color: #e74c3c;
+    background-color: #e74c3c; 
     color: white;
 }
 
 th, td {
-    border: 1px solid #333;
-    padding: 14px;
+    padding: 15px 20px;
     text-align: center;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #333;
+    border-bottom: 1px solid #b2bec3;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 tbody tr:nth-child(odd) {
-    background-color: #444;
+    background-color: #2d3436; 
+}
+
+tbody tr:nth-child(even) {
+    background-color: #111111; 
 }
 
 tbody tr:hover {
-    background-color: #555;
+    background-color: #555; 
+    cursor: pointer;
 }
 
 .btn-action {
-    background-color: #111;
+    background-color: #111; 
     color: white;
     padding: 8px 14px;
     border: none;
     cursor: pointer;
     border-radius: 6px;
-    margin: 4px;
+    margin: 5px;
+    transition: 0.3s;
 }
 
 .btn-action.edit {
-    background-color: #000000; /* Preto */
+    background-color: #000000; 
 }
 
 .btn-action.delete {
-    background-color: #e74c3c; /* Vermelho */
+    background-color: #e74c3c; 
 }
 
 .btn-action:hover {
@@ -93,44 +126,46 @@ tbody tr:hover {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     justify-content: center;
     align-items: center;
 }
 
 .modal-content {
-    background: #ffffff;
+    background: #ffffff; 
     padding: 30px;
     border-radius: 12px;
-    width: 45%;
+    width: 40%;
     text-align: left;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .close {
-    float: right;
-    font-size: 26px;
+    font-size: 28px;
     font-weight: bold;
-    color: #e74c3c;
+    color: #e74c3c; 
     cursor: pointer;
 }
 
 .modal-content h2 {
     text-align: center;
-    margin-bottom: 15px;
+    font-size: 22px;
+    margin-bottom: 20px;
 }
 
 .modal-content label {
     display: block;
-    margin: 12px 0 6px;
-    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #2d3436; 
 }
 
 .modal-content input {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 12px;
-    border: 1px solid #ddd;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #b2bec3; 
     border-radius: 6px;
-    font-size: 14px;
+    font-size: 16px;
 }
+
