@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPlast</title>
+    <link rel="stylesheet" href="produtos.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <header>
+        <h1>IPlast</h1>
+    </header>
+
+    <main>
+        <button class="btn" id="openModal">Novo Produto</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Va. Custo</th>
+                    <th>Va. Final</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Arroz</td>
+                    <td>Arroz Integral</td>
+                    <td>R$3,50</td>
+                    <td>R$12,00</td>
+                    <td>
+                        <button class="btn-action edit">Editar</button>
+                        <button class="btn-action delete">Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tomate</td>
+                    <td>Tomate Caqui</td>
+                    <td>R$7,00</td>
+                    <td>R$18,00</td>
+                    <td>
+                        <button class="btn-action edit">Editar</button>
+                        <button class="btn-action delete">Excluir</button>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Olavo Marques</p>
+    </footer>
+
+    
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Adicionar Produto</h2>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" required>
+
+                <label for="description">Descrição:</label>
+                <input type="text" id="description" required>
+
+                <label for="cost">Valor de Custo:</label>
+                <input type="text" id="cost" required>
+
+                <label for="price">Valor Final:</label>
+                <input type="text" id="price" required>
+
+                <button type="submit" class="btn">Salvar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="produtos.js"></script>
+</body>
+</html>

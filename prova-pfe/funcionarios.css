@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(to bottom, #2d3436, #111111);
+    color: white;
+}
+
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+.btn {
+    background: #e74c3c;
+    color: white;
+    padding: 14px 24px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #c0392b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+thead {
+    background-color: #e74c3c;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 14px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #333;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #444;
+}
+
+tbody tr:hover {
+    background-color: #555;
+}
+
+.btn-action {
+    background-color: #111;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    margin: 4px;
+}
+
+.btn-action.edit {
+    background-color: #000000; /* Preto */
+}
+
+.btn-action.delete {
+    background-color: #e74c3c; /* Vermelho */
+}
+
+.btn-action:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 45%;
+    text-align: left;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    float: right;
+    font-size: 26px;
+    font-weight: bold;
+    color: #e74c3c;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.modal-content label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: 600;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}

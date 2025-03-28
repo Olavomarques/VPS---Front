@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPlast - Funcionários</title>
+    <link rel="stylesheet" href="funcionarios.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <header>
+        <h1>IPlast - Funcionários</h1>
+    </header>
+
+    <main>
+        <button class="btn" id="openModal">Novo Funcionário</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Descrição</th>
+                    <th>Vs. Custo</th>
+                    <th>Vs. Final</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>arroz</td>
+                    <td>arroz Integral</td>
+                    <td>R$10,00</td>
+                    <td>R$15,00</td>
+                    <td>
+                        <button class="btn-action edit">Editar</button>
+                        <button class="btn-action delete">Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fejão</td>
+                    <td>Fejão preto</td>
+                    <td>R$10,00</td>
+                    <td>R$25,00</td>
+                    <td>
+                        <button class="btn-action edit">Editar</button>
+                        <button class="btn-action delete">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </main>
+
+    <footer>
+        <p>Desenvolvido por Olavo Marques</p>
+    </footer>
+
+    
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Adicionar Funcionário</h2>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" required>
+
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="phone">Telefone:</label>
+                <input type="text" id="phone" required>
+
+                <label for="address">Logradouro:</label>
+                <input type="text" id="address" required>
+
+                <button type="submit" class="btn">Salvar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="funcionarios.js"></script>
+</body>
+</html>
